@@ -1,0 +1,37 @@
+body {
+    height: 100%;
+    margin: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .container{
+    height: 100vh;
+  }
+
+  .btn-antri{
+    width: 250px;
+    height: 150px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 15px 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 100px;
+    border-radius: 0.375rem;
+  }
+
+  .btn-antri h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #antri{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }

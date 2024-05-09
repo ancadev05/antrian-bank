@@ -1,0 +1,47 @@
+/* body{
+    height: 100%;
+} */
+
+
+#kop table{
+    font-size: 25px;
+}
+
+#timer{
+    /* background-color: white; */
+    display: block;
+    /* padding:0px 87px; */
+    /* margin: auto; */
+    /* margin-block: ; */
+    font-size: 130px;
+    font-weight: bold;
+    /* line-height: 0; */
+    /* border:1px solid ; */
+    /* border-radius: 10%; */
+    /* transform: translate(-50%,-50%); */
+}
+
+.tbl-nilai{
+    font-size: 29px;
+    font-weight: bold;
+}
+
+#tbl-hasil{
+    font-size: 20px;
+}
+
+/* tampilan di teller */
+#angka-teller{
+    font-size: 70px;
+    border: 1px solid black;
+    padding: 20px 0;
+    border-radius: 0.375rem;
+    background-color: white;
+}
+
+/* tampilan jam digital */
+/* #clock {
+    font-size: 48px;
+    margin-top: 100px;
+    color: rebeccapurple;
+} */
