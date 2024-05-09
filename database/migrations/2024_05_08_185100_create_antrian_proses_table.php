@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('kode_antrian');
             $table->string('no_antrian');
-            $table->string('id_teller');
-            $table->string('id_cs');
+            $table->string('id_teller')->nullable();
+            $table->string('id_cs')->nullable();
             $table->timestamps();
         });
     }

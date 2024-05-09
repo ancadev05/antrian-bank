@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('antrian_cs', function (Blueprint $table) {
             $table->id();
-            $table->string('kode_antrian');
-            $table->string('no_antrian');
+            $table->string('kode_antrian')->default('B');
+            // $table->integer('no_antrian')->autoIncrement();
             $table->timestamp('tanggal');
             $table->timestamps();
         });

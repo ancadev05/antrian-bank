@@ -21,7 +21,7 @@
                     <tbody>
                         @forelse ($daftarAntrian as $item)
                             <tr>
-                                <td class="text-center">A{{ $item->no_antrian }}</td>
+                                <td class="text-center">A-{{ $item->id}}</td>
                                 <td class="text-center">{{ $item->created_at }}</td>
                             </tr>
                         @empty

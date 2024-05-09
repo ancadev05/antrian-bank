@@ -52,3 +52,40 @@ if ($antrian_teller == null) {
     // // hapus antrian yang sudah diproses
     // antrian_teller::where('id', $antrianPanggil)->delete();
     // return redirect()->to('/teller');
+
+
+
+
+
+???????????????????????????????????????
+if ($antrian_teller == null) {
+    $data = [
+        'kode_antrian' => 'A',
+        'no_antrian' => 0
+    ];
+    antrian_teller::create($data);
+
+    $antrian_teller = antrian_teller::get()->last();
+    $id = $antrian_teller['id'];
+
+    $data = [
+        'kode_antrian' => 'A',
+        'no_antrian' => $id
+    ];
+    antrian_teller::where('id', $id)->update($data);
+} else {
+    $data = [
+        'kode_antrian' => 'A',
+        'no_antrian' => 0
+    ];
+    antrian_teller::create($data);
+
+    $antrian_teller = antrian_teller::get()->last();
+    $id = $antrian_teller['id'];
+
+    $data = [
+        'kode_antrian' => 'A',
+        'no_antrian' => $id
+    ];
+    antrian_teller::where('id', $id)->update($data);
+}

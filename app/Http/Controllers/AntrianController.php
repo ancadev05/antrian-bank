@@ -23,23 +23,7 @@ class AntrianController extends Controller
 
     public function tambahAntrianTeller()
     {
-        $antrian = antrian_teller::get()->last();
-        $antrian_proses = antrian_proses::get()->last();
-        $antrian_selesai = antrian_selesai::get()->last();
-
-        if ($antrian == null) {
-            $no_antrian = 1;
-        } else {
-            $antrian_terakhir = $antrian['id'];
-            $no_antrian = $antrian_terakhir + 1;
-        }
-
-        $data = [
-            'kode_antrian' => 'A',
-            'no_antrian' => $no_antrian
-        ];
-
-        antrian_teller::create($data);
+        antrian_teller::create();
 
         return redirect()->to('/antrian-ambil');
     }

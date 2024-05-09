@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('antrian_selesais', function (Blueprint $table) {
             $table->id();
-            $table->string('kod_antrian');
+            $table->string('kode_antrian');
             $table->string('no_antrian');
             $table->string('id_teller')->nullable();
             $table->string('id_cs')->nullable();
